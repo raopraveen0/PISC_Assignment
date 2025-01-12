@@ -38,7 +38,6 @@ const App = () => {
         await axios.put(`http://localhost:5000/employees/${editId}`, formData);
         alert('Employee updated successfully');
       } else {
-        // Add new employee
         await axios.post('http://localhost:5000/employees', formData);
         alert('Employee added successfully');
       }
